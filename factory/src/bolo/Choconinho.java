@@ -2,10 +2,10 @@ package bolo;
 
 public class Choconinho extends Bolo{
 	
-	public Choconinho(String nome, String tipo, Float preco) {
-		setNome(nome);
-		setPreco(preco);
-		setTipo(tipo);
+	public Choconinho() {
+		setNome("bolo choconinho");
+		setPreco(2f);
+		setTipo("choconinho tipo");
 	}
 	
 	@Override

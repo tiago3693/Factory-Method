@@ -2,10 +2,10 @@ package bolo;
 
 public class Prestigio extends Bolo{
 	
-	public Prestigio(String nome, String tipo, Float preco) {
-		setNome(nome);
-		setPreco(preco);
-		setTipo(tipo);
+	public Prestigio() {
+		setNome("presitigio bolo");
+		setPreco(5f);
+		setTipo("prestigio tipo");
 	}
 	
 	@Override

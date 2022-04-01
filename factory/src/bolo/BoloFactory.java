@@ -1,6 +1,6 @@
 package bolo;
 
-public class BoloFactory {
+public class BoloFactory implements FormaBolo{
 	
 	public enum Sabor {
 		ABACAXI, CHOCONINHO, FLORESTA, PRESTIGIO;
@@ -11,16 +11,16 @@ public class BoloFactory {
 
 		switch (t) {
 		case ABACAXI:
-			f = new Abacaxi("abacaxi nome", "abacaxi tipo", 10.2f);
+			f = new Abacaxi();
 			break;
 		case CHOCONINHO:
-			f = new Choconinho("choconinho nome", "choconinho tipo", 11.2f);
+			f = new Choconinho();
 			break;
 		case FLORESTA:
-			f = new FlorestaNegra("floresta nome", "floresta tipo", 13.2f);
+			f = new FlorestaNegra();
 			break;
 		case PRESTIGIO:
-			f = new Prestigio("prestigio nome", "prestigio tipo", 15.2f);
+			f = new Prestigio();
 		}
 		return f;
 	}
